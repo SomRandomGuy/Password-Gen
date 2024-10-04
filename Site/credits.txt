@@ -1,0 +1,6 @@
+assets/CMB.svg - https://static.wikia.nocookie.net/half-life/images/e/e3/CMB.svg/revision/latest?cb=20100327183311&path-prefix=en - Valve Corp
+favicon.ico - https://en.m.wikipedia.org/wiki/File:Combine.svg - Valve Corp
+assets/menu.svg - Google fonts
+assets/BoxedRoundSemiBold.ttf - https://fontshub.pro/font/boxed-round-download - Seems like the closest font to the Combine 3d printer
+assets/Combine_Alphabet.otf - https://online-fonts.com/fonts/combine-alphabet - Valve
+assets/Combine-screen.gif - https://tenor.com/ru/view/half-life-alyx-half-life-alyx-fabricator-combine-gif-20408820 - Orignal texture by Valve

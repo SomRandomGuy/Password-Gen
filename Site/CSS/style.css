@@ -1,0 +1,126 @@
+*{
+    transition: opacity var(--ani-time), visibility var(--ani-time);
+    font-family: "BoxedRSB"; /* The default font for the entire page */
+    color: var(--text-color);
+    fill:  var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.nav-links {
+    display: contents;
+}
+
+nav {
+    z-index: 9999;
+    border-bottom: 2px solid var(--border-color);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.nav-logo {
+    height: 100%;
+    width: 125px;
+}
+
+.logo {
+    margin-left: 5px !important;
+    margin-right: auto;
+}
+
+.nav-links {
+    margin-left: auto !important;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    font-family: "Combine";
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    transition: all var(--ani-time) ease-out;
+    color: var(--heading-color);
+    background-color: #026A91;
+}
+
+a:not(:hover) {
+    transition: all var(--ani-time) ease-out;
+}
+
+
+.link-highlighted {
+    color: var(--heading-color);
+}
+
+.hamburger {
+    margin-left: auto;
+}
+
+.sidebar {
+    transition: all var(--ani-time) ease-out;
+    border: 2px solid var(--border-color);
+    position: fixed;
+    right: 0;
+    width: 250px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar li a {
+    padding-left: 2.5px;
+}
+
+.lower-nav {
+    border-top: 50px;
+    height: 50px;
+    border-top: 2px solid var(--border-color);
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    list-style: none;
+
+}
+
+.page-id {
+   margin-left: 5px;
+   font-size: 100%;
+}
+
+.cmb-main {
+    height: 100%;
+    width: 50px;
+    margin-left: auto;
+}
+
+/* Media query */
+/* TODO: Replace the hard coded max-width with a better approcach, Because it is not going to work with too much text in the navbar */
+@media screen and (max-width: 1069px) {
+    nav {
+        width: 100vw;
+        position: fixed;
+    }
+}

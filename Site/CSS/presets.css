@@ -1,0 +1,116 @@
+:root {
+    --border-color: #20666B;
+    --text-color: #1882A1;
+    --ani-time: 0.25s;
+    --heading-color: #3BC2B7;
+    --combine-red: #E53523;
+}
+
+@font-face {
+    font-family: 'Combine';
+    src: url('../assets/Combine_Alphabet.otf');
+}
+
+@font-face {
+    font-family: "BoxedRSB";
+    src: url('../assets/BoxedRoundSemibold.ttf');
+}
+
+.BoxedRSB {
+    font-family: "BoxedRSB";
+}
+
+.combine-font {
+    font-family: "Combine";
+}
+
+.combine-red {
+    color: #E53523;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.fabricator-background {
+    background: url("../assets/combine-screen.gif");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px; /* Change these up so it's d y n a m i c * ( i am not going to bother with this)*/
+    padding-bottom: 55px; /* change that big dawg */
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dead-center {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    transition: all var(--ani-time) ease-out;
+    border-radius: 0;
+    color: #3CAFB3;
+    border: 2px solid #3CAFB3;
+}
+
+button:hover {
+    background-image: none;
+    background-color: #25B6CE60;
+    color: #3ED2E1;
+    border: 2px solid #3ED2E1;
+
+}
+
+button:not(:hover) {
+    transition: background-color var(--ani-time) ease-out;
+    background-color: transparent;
+}
+
+input[type="text"] {
+    transition: all var(--ani-time) ease-out;
+    border: 2px solid #3CAFB3;
+}
+
+input[type="text"]:hover {
+    border: 2px solid #3ED2E1;
+}
+
+@media screen and (max-width: 1069px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .content {
+        padding-top: 55px; /* Change thse up so it's d y n a m i c */
+    }
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+h2 {
+    color: var(--heading-color);
+}
+
+h3 {
+    color: var(--heading-color);
+}
