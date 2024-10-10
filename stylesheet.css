@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('OpenSansNormal.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuroStyle';
+    src: url('EuroStyle.ttf');
+    font-style: normal;
+}
+
+.EuroStyle {
+    font-family: "EuroStyle";
+}
+
+* {
+    --scaler: .5;
+    --border-margin: 5px;
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans";
+}
+
+body
+{
+    background-color: #151515;
+    color: #fff !important;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    font-size: 175%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100vw;
+}
+
+nav ul {
+    width: 100vw;
+    display: flex;
+}
+
+nav > ul > li:first-child {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+nav li {
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-family: "EuroStyle";
+    text-decoration: none;
+    color: #fb7e14;
+    margin-right: 5px;
+}
+
+nav a:hover {
+    color: #ff9a1a;
+}
+
+.border {
+    padding: 1%;
+    margin-top: var(--border-margin);
+    margin-bottom: var(--border-margin);
+    width: 75vw;
+    border: 2px solid #292929 !important;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.border.flex-column {
+    flex-direction: column;
+}
+
+.border.justify-con-cen {
+    justify-content: center;
+}
+
+.button {
+    fill: white;
+    transition: all 0.25s ease-out;
+    transform-origin: center;
+    height: 1em;
+    width: 1em;
+}
+
+.button:hover {
+    fill: #B0B0B0;
+    height: 100%;
+    transform: scale(calc(var(--scaler) + 1));
+}
+
+.button.pressed {
+    fill: white;
+    transform: scale(0.70);
+}
+
+
+.password-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#password {
+    width: 90%;
+    outline: none;
+    font-size: 115%;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.password-field svg:nth-child(2) {
+    margin-left: auto;
+}
+
+.password-field svg {
+    margin-right: 5px;
+}
+
+.password-gen-settings input[type="checkbox"] {
+    margin-left: auto;
+}
+
+/* I feel like there are better ways to scale this... */
+/* Width */
+
+@media (max-width: 525px) {
+    .wrapper {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        font-size: 6vw;
+    }
+}
+
+/* Height */
+
+@media (max-height: 400px) {
+    .wrapper {
+        font-size: 4.5vh;
+    }
+}
+
+@media (max-height: 340px) {
+    .wrapper {
+        font-size: 3.5vh;
+    }
+}
